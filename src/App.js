@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import New from '../src/new'
+import Change from '../src/change'
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <New />
+
     </div>
-  );
+  )
 }
 
-export default App;
+
+
+
+// import { Radio } from '@material-ui/core';
+// import React, { useState } from 'react';
+
+// export default function App() {
+//   const [gender, setGender] = useState([
+//     { key: "Get More Shampoo", status: "incomplete" },
+//     { key: "Drink More Cofee", status: "incomplete" },
+//   ]);
+
+//   const handle = () => {
+//     setGender([...gender, { status: 'complete' }])
+//   }
+//   console.log("gender", gender)
+//   return (
+//     <>
+//       <label>Gender</label>
+//       <Radio label="Complete" checked={gender === 'Complete'} value="Complete" onClick={() => handle()} />
+//       {/* <Radio label="InComplete" checked={gender === 'InComplete'} value="InComplete" onClick={() => setGender('InComplete')} /> */}
+//     </>
+//   );
+// }
